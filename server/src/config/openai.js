@@ -7,7 +7,7 @@ module.exports = class openai {
         const configuration = new Configuration({
             apiKey: process.env.OPENAI_API_KEY,
             });
-        return new OpenAIApi(configuration)
+        return new OpenAIApi(configuration);
     }
     static textCompletion({prompt}){
         return {
